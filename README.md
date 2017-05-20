@@ -8,7 +8,6 @@ This README is intended to help get you started. Definitely update and improve
 to talk about your own instance, how to use and deploy, what functionality is
 available, etc!
 
-[heroku]: http://www.heroku.com
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
@@ -212,3 +211,13 @@ Add the subdomain hubot should connect to. If you web URL looks like
 
 You may want to get comfortable with `heroku logs` and `heroku restart` if
 you're having issues.
+
+## IRC Variables & Startup
+
+```
+HUBOT_IRC_SERVER=irc.freenode.net \
+  HUBOT_IRC_ROOMS="#metio.wtf" \
+  HUBOT_IRC_NICK="ops-metio-wtf" \
+  HUBOT_IRC_UNFLOOD="true" \
+  bin/hubot -a irc --name ops-metio-wtf
+``` 
